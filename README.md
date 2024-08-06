@@ -1,1 +1,3 @@
-# recipe-hono-deno
+```
+deno task start
+```

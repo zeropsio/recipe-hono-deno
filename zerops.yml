@@ -1,0 +1,14 @@
+zerops:
+  - setup: app
+    build:
+      base: deno@1
+      deployFiles:
+        - deno.lock
+        - main.ts
+        - deno.json
+    run:
+      base: deno@1
+      ports:
+        - port: 8000
+          httpSupport: true
+      start: deno task start
