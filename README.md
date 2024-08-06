@@ -1,3 +1,4 @@
-```
-deno task start
-```
+# Zerops x Hono - Deno
+
+A basic Hono example running on zerops
+
