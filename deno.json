@@ -1,9 +1,17 @@
 {
   "imports": {
-    "hono": "jsr:@hono/hono@^4.5.4"
+    "hono": "jsr:@hono/hono@^4.5.4",
+    "hono/": "jsr:@hono/hono@^4.5.4/",
+    "postgres": "jsr:@deno/postgres@v0.2.0",
+    "redis": "jsr:@deno/redis@v0.1.0",
+    "drizzle-orm": "npm:drizzle-orm@0.28.6",
+    "drizzle-orm/pg-core": "npm:drizzle-orm@0.28.6/pg-core",
+    "pg": "npm:pg@8.11.3"
   },
   "tasks": {
-    "start": "deno run --allow-net main.ts"
+    "start": "deno run --allow-net --allow-env --allow-read main.ts",
+    "dev": "deno run --watch --allow-net --allow-env --allow-read main.ts",
+    "generate": "deno run --allow-net --allow-env --allow-read --allow-write scripts/generate-schema.ts"
   },
   "compilerOptions": {
     "jsx": "precompile",
