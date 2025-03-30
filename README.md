@@ -15,33 +15,6 @@ A robust, production-ready backend API built with [Hono](https://hono.dev), Post
 - 📝 **TypeScript**: Fully typed codebase for better developer experience
 - 🦕 **Deno Runtime**: Modern JavaScript runtime with built-in TypeScript support
 
-## Prerequisites
-
-- [Deno](https://deno.land/) 1.34.0 or higher
-- PostgreSQL 12+
-- Redis 6+
-
-## Environment Variables
-
-Create a `.env` file in the root directory with the following variables:
-
-```
-# PostgreSQL
-DATABASE_URL=postgres://postgres:postgres@localhost:5432/hono_app
-
-# Redis
-REDIS_HOST=localhost
-REDIS_PORT=6379
-
-# App
-NODE_ENV=development
-```
-
-The `DATABASE_URL` follows this format:
-```
-postgres://username:password@host:port/database
-```
-
 ## Getting Started
 
 1. Clone this repository
